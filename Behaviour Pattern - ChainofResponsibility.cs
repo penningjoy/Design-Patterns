@@ -10,7 +10,6 @@ using System.Text;
 
 namespace DesignPatternPlayground
 {
-    /*
     interface IArithmaticOperation
     {
         public void setNext(IArithmaticOperation nextInChain);
@@ -139,5 +138,5 @@ namespace DesignPatternPlayground
             Console.ReadKey();
         }
     }
-    */
+
 }

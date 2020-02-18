@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-/*
+
 namespace DesignPatternPlayground
 {
  
@@ -46,4 +46,3 @@ namespace DesignPatternPlayground
 
     }
 }
-*/

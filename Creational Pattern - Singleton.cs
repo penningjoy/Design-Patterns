@@ -9,7 +9,6 @@ using System.Text;
 
 namespace DesignPatternPlayground
 {
-    /*
     class Program
     {
         static void Main(string[] args)
@@ -53,5 +52,5 @@ namespace DesignPatternPlayground
             return _instance;
         }
     }
-    */
+
 }
