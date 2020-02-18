@@ -1,5 +1,5 @@
 ﻿
-/* Chain of Responsibility 
+/* Behaviour Pattern ---- Chain of Responsibility 
  * Avoid coupling the sender of a request to its receiver by giving more than one object a chance to handle the request.
  * Chain the receiving objects and pass the request along the chain until an object handles it.
  */
@@ -10,6 +10,7 @@ using System.Text;
 
 namespace DesignPatternPlayground
 {
+
     interface IArithmaticOperation
     {
         public void setNext(IArithmaticOperation nextInChain);
@@ -129,13 +130,12 @@ namespace DesignPatternPlayground
         }
     }
 
-    public class Program
+    public class ChainofResponsibility
     {
-        public static void Main()
+        public static void MainCaller()
         {
             Arithmaticcalculator calculator = new Arithmaticcalculator(10, 4);
             calculator.operationhandler();
-            Console.ReadKey();
         }
     }
 
