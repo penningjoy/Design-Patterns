@@ -1,4 +1,6 @@
-﻿/* Creational Pattern ---- Singleton Design Pattern
+﻿/* --------------------------------------------------
+ * Creational Pattern ---- Singleton Design Pattern
+ * --------------------------------------------------
  *  i.  ---  Defines an Instance operation that lets clients access its unique instance. Instance is a class operation.
     ii. ---  Responsible for creating and maintaining its own unique instance.
 */
