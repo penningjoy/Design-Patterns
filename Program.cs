@@ -39,6 +39,9 @@ namespace DesignPatternPlayground
                 case 6:
                     StrategyPattern.MainCaller();
                     break;
+                case 7:
+                    ObserverPattern.MainCaller();
+                    break;
                 default:
                     Console.WriteLine("Sorry, we don't serve this yet.");
                     break;
