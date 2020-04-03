@@ -1,5 +1,4 @@
-﻿﻿
-# Design Pattern 
+﻿﻿Design Patterns
  
  ```
  There are altogether 23 Gang of Four (GoF) design patterns. These design patterns are categorized in 3 groups: 
