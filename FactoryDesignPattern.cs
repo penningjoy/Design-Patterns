@@ -85,12 +85,19 @@ namespace DesignPatternPlayground
         {
             Datastorefactory datastorefactory = new DataStoreObjectFactory();
             Console.WriteLine("Let's fetch some data from storages.....");
+            try
+            {
+                IDataStore databasecontent = datastorefactory.GetStoreObject("database");
+                Console.WriteLine(databasecontent.data);
 
-            IDataStore databasecontent = datastorefactory.GetStoreObject("database");
-            Console.WriteLine(databasecontent.data);
+                IDataStore cachecontent = datastorefactory.GetStoreObject("cache");
+                Console.WriteLine(cachecontent.data);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
 
-            IDataStore cachecontent = datastorefactory.GetStoreObject("cache");
-            Console.WriteLine(cachecontent.data);
         }
     }
 }
