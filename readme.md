@@ -1,4 +1,5 @@
-﻿﻿# Design Patterns 
+﻿﻿
+# Design Pattern 
  
  ```
  There are altogether 23 Gang of Four (GoF) design patterns. These design patterns are categorized in 3 groups: 
@@ -22,7 +23,7 @@ dotnet run
 
 ## Notes
 
-####This project has 8 design patterns implemented 
+#### This project has 8 design patterns implemented 
 
 ```
              1. Singleton - Creational Pattern  
