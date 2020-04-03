@@ -89,9 +89,9 @@ namespace DesignPatternPlayground
             IPublisher bestBookStore = new Publisher();
             IObserver customer1 = new Observer("Joydeep Banerjee");
             IObserver customer2 = new Observer("Pushpita Choudhury");
-            /*
+            
             bestBookStore.subscribe(customer1);
-            bestBookStore.subscribe(customer2); */
+            bestBookStore.subscribe(customer2); 
             try
             {
                 bestBookStore.booksLibrary(4);

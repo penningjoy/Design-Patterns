@@ -17,14 +17,24 @@ namespace DesignPatternPlayground
         public string getname();
     }
 
-    //2. Concrete Strategy Class
-    public class book : ibook
+    //2.1 Concrete Strategy Class
+    public class Englishbook : ibook
     {
         public string getname()
         {
             return "Harry Potter";
         }
     }
+
+    //2.2 Concrete Strategy Class
+    public class Bengalibook : ibook
+    {
+        public string getname()
+        {
+            return "Sohoj Path";
+        }
+    }
+
 
     //3. Context Class
     public class Store
@@ -34,10 +44,6 @@ namespace DesignPatternPlayground
         public Store(ibook book) // Constructor Dependency Injection
         {
             _book = book;
-        }
-        public Store()
-        {
-            _book = new book();
         }
         public string books()
         {
@@ -50,8 +56,12 @@ namespace DesignPatternPlayground
     {
         public static void MainCaller()
         {
-            Store store = new Store();
+            Store store = new Store(new Englishbook());
             Console.WriteLine(store.books());
+
+            store = new Store(new Bengalibook());
+            Console.WriteLine(store.books());
+
             Console.ReadLine();
         }
 

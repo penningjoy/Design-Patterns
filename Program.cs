@@ -4,9 +4,17 @@
  *  ------ DESIGN PATTERNS - GANG OF FOUR -------
  *  ---------------------------------------------
  * There are altogether 23 Gang of Four (GoF) design patterns. These design patterns are categorized in 3 groups: 
- * i.   Creational, 
- * ii.  Structural, and 
- * iii. Behavioral 
+ * 
+ * i.   Creational -- Creational Design patterns provide a way to create objects without revealing the creation 
+ *                    logic. This brings in flexibility to decide which objects are important and only they can
+ *                    be created.
+ *      
+ * ii.  Structural -- Structural Design Patterns deal mainly with the structure of the classes and objects. It takes 
+ *                     into account the concepts of inheritence, abstraction, interfaces to create and modify 
+ *                     objects.
+ *                     
+ * iii. Behavioral -- Behavioural Design Patterns are about the objects behaving and communicating with each other. 
+ * 
  */
 
 using System;
@@ -33,6 +41,15 @@ namespace DesignPatternPlayground
                 case 1:
                     Singleton.MainCaller();
                     break;
+                case 2:
+                    FactoryDesignPattern.MainCaller();
+                    break;
+                case 3:
+                    PrototypePattern.MainCaller();
+                    break;
+                case 4:
+                    DecoratorPattern.MainCaller();
+                    break;
                 case 5:
                     ChainofResponsibility.MainCaller();
                     break;
@@ -41,6 +58,9 @@ namespace DesignPatternPlayground
                     break;
                 case 7:
                     ObserverPattern.MainCaller();
+                    break;
+                case 8:
+                    IteratorPattern.MainCaller();
                     break;
                 default:
                     Console.WriteLine("Sorry, we don't serve this yet.");
